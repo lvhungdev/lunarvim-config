@@ -1,4 +1,4 @@
-vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jsonls", "yamlls" })
+vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jsonls", "yamlls", "cssls", "tailwindcss" })
 
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({

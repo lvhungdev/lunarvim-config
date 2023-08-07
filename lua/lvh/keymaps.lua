@@ -32,3 +32,9 @@ lvim.lsp.buffer_mappings.normal_mode["gr"] = { ":Telescope lsp_references<CR>", 
 lvim.lsp.buffer_mappings.normal_mode["gi"] = { ":Telescope lsp_implementations<CR>", "Find implementations" }
 lvim.builtin.which_key.mappings["a"] = { vim.lsp.buf.code_action, "Code actions" }
 lvim.builtin.which_key.mappings["r"] = { vim.lsp.buf.rename, "Rename" }
+lvim.builtin.which_key.mappings["l"]["f"] = {
+    function()
+        require("lvim.lsp.utils").format { timeout_ms = 2000 }
+    end,
+    "Format",
+}

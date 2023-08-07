@@ -72,3 +72,5 @@ lvim.builtin.nvimtree.setup = {
         },
     },
 }
+
+lvim.builtin.treesitter.auto_install = false
